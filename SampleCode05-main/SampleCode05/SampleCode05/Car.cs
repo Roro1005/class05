@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SampleCode05
 {
-    public class Car
+    public class Car:IRunnable
     {
         public float Position = 0f;
         public float Speed = 10f; //秒速10m
@@ -19,6 +19,7 @@ namespace SampleCode05
 
         public void Run(float time)
         {
+            Console.WriteLine("車が走るよ");
             this.Position += time * this.Speed;
         }
     }

@@ -26,6 +26,7 @@ Console.WriteLine("after:" + carInstance.Position);
 */
 
 //ハンズオン04
+/*
 Character player = new Character(100f, 10f, 5f);
 Character enemy = new Character(50f, 8f, 2f);
 
@@ -42,4 +43,34 @@ while(!battleEnded)
 }
 
 Console.WriteLine("バトル終了");
+*/
 
+//オーバーライド、ポリモーフィズム
+/*
+Human human = new Human();
+Dog dog=new Dog();
+
+Functions.RunTest(human);
+Functions.RunTest(dog);
+
+human.Cry();
+dog.Cry();
+
+human.Run();
+dog.Run();
+*/
+//ハンズオン05
+/*
+Character player = new Player("キリト",100f, 10f, 5f);
+Character enemy = new Enemy(50f, 8f, 2f, 10);
+
+player.WriteProfile();
+enemy.WriteProfile();
+*/
+
+//ハンズオン07
+IRunnable car = new Car(10f);
+IRunnable human = new Human();
+
+car.Run(1f);
+human.Run(1f);

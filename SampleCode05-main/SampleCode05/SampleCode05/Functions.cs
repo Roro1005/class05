@@ -20,5 +20,9 @@ namespace SampleCode05
             car.Run(12345f);
         }
 
+        public static void RunTest(Mammal mammal)
+        {
+            mammal.Run();
+        }
     }
 }

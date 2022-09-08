@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SampleCode05
 {
-    public class Character
+    public abstract class Character
     {
         public float HP;
         public float MaxHP;
@@ -21,6 +21,7 @@ namespace SampleCode05
             this.DefencePoint = defencePoint;
         }
 
+        public abstract void WriteProfile();
         public void Attack(Character target)
         {
             //ダメージ計算
@@ -30,5 +31,6 @@ namespace SampleCode05
             //相手のHPを減らす
             target.HP -= damage;
         }
+       
     }
 }
