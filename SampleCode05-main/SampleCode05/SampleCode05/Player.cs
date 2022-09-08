@@ -8,8 +8,16 @@ namespace SampleCode05
 {
     internal class Player:Character
     {
-        public string Name;
-        public int Level;
+        public string Name
+        {
+            get;
+            private set;
+        }
+        public int Level
+        {
+            get;
+            private set;
+        }
         public Player(string name, float maxHP, float attackPoint, float defencePoint)
             : base(maxHP, attackPoint, defencePoint)
         {

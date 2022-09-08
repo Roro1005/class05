@@ -8,10 +8,26 @@ namespace SampleCode05
 {
     public abstract class Character
     {
-        public float HP;
-        public float MaxHP;
-        public float AttackPoint;
-        public float DefencePoint;
+        public float HP
+        {
+            get;
+            private set;
+        }
+        public float MaxHP
+        {
+            get;
+            private set;
+        }
+        public float AttackPoint
+        {
+            get;
+            private set;
+        }
+        public float DefencePoint
+        {
+            get;
+            private set;
+        }
 
         public Character(float maxHP, float attackPoint, float defencePoint)
         {

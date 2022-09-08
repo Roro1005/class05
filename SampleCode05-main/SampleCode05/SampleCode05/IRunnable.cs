@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SampleCode05
 {
-    internal interface IRunnable
+    public interface IRunnable
     {
         void Run(float time);
     }
